@@ -1,0 +1,37 @@
+$containerWidth: 940px;
+$baseFontSize: 16px;
+
+//colors
+$grey: #F5F5F5;
+$white: #fff;
+
+//normalize
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import "./layout.css";
+
+//components
+@import "./components/hero.css";
+@import "./components/header.css";
+@import "./components/features.css";
+@import "./components/feature.css";
+@import "./components/btn.css";
+@import "./components/section.css";
+@import "./components/headline.css";
+@import "./components/benefits.css";
+@import "./components/benefit.css";
+@import "./components/benefits-section.css";
+@import "./components/reviews.css";
+@import "./components/interactive-avatar.css";
+@import "./components/reviews-section.css";
+@import "./components/order-section.css";
+@import "./components/form.css";
+@import "./components/radio.css";
+@import "./components/fixed-menu.css"
+
+
+
+

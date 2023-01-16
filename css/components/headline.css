@@ -1,0 +1,13 @@
+.headline {
+  text-align: center;
+}
+
+.headline__title {
+  margin-bottom: 18px;
+  color: #292929;
+}
+
+.headline__subtitle {
+  padding: 0 22%;
+  margin-bottom: 60px;
+}

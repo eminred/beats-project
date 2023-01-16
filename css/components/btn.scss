@@ -1,0 +1,37 @@
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 18px 42px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+
+
+  &--theme--red {
+    background: #E01F3D;
+    color: #fff;
+
+    &:hover {
+      background: #CA1B36;
+    }
+  }
+
+  &--theme--transparent{
+    background: transparent;
+    color: #fff;
+    font-weight: 400;
+    text-transform:none ;
+    padding-left: 16px;
+
+
+
+    &:hover{
+      color: #E01F3D;
+    }
+
+  }
+}
+

@@ -1,0 +1,9 @@
+.reviews-section {
+  position: relative;
+}
+.reviews-section:before {
+  content: url("../../img/circle.svg");
+  position: absolute;
+  bottom: -25px;
+  left: 25%;
+}
