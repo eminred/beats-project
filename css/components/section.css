@@ -11,9 +11,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.section--font--color--white {
-  color: #FFFFFF;
+  /*&--font--color--white{
+    color: #FFFFFF;
+  }*/
 }
 
 .section__title {
@@ -25,5 +25,9 @@
   color: #292929;
 }
 .section__title--white {
+  color: #FFFFFF;
+}
+
+.order-section {
   color: #FFFFFF;
 }

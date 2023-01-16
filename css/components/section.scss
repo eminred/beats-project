@@ -5,9 +5,9 @@
   flex-direction: column;
   justify-content: center;
 
-  &--font--color--white{
+  /*&--font--color--white{
     color: #FFFFFF;
-  }
+  }*/
 }
 
 .section__title{
@@ -24,4 +24,8 @@
     color: #FFFFFF
     ;
   }
+}
+
+.order-section {
+  color: #FFFFFF
 }
