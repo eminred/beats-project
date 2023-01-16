@@ -1,13 +1,13 @@
-.headline {
+.benefits {
   text-align: center;
 }
 
-.headline__title {
+.benefits__title {
   margin-bottom: 18px;
   color: #292929;
 }
 
-.headline__subtitle {
+.benefits__subtitle {
   padding: 0 22%;
   margin-bottom: 60px;
 }
