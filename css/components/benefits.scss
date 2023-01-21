@@ -13,6 +13,10 @@
     top: rem(60px);
     right: 0;
     transform: translateX(50%);
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &:first-child{

@@ -8,8 +8,7 @@
 
   &:after {
     @include tablets {
-      display: none;
-    }
+      color: #858585;    }
   }
 
   &:after{
@@ -47,6 +46,7 @@
 
     &:before {
       content: url("../img/headphones_tablets.png");
+      margin-bottom: 60px;
     }
   }
 }

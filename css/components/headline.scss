@@ -13,5 +13,9 @@
   padding: 0 22%;
   margin-bottom: rem(60px);
   text-align: center;
+
+  @include tablets {
+    padding: 0 15%;
+  }
 }
 

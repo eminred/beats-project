@@ -28,8 +28,15 @@
 font-size: rem(24px);
 color: #292929;
 margin-bottom: rem(7px);
+
+@include tablets {
+  white-space: nowrap;
+}
 }
 
 .benefit__desc{
-  padding: 0 5%;;
+  padding: 0 5%;
+  @include tablets {
+    padding: 0 0%;
+  }
 }
