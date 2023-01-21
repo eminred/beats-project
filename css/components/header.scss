@@ -63,6 +63,12 @@
   width: rem(13px);
   height: rem(13px);
   margin-right: rem(6px);
+
+  &--red{
+    @include tablets {
+    fill:#E01F3D;
+      }
+  }
 }
 
 .phone-number__text{

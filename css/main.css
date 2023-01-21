@@ -296,6 +296,11 @@ img {
   height: 0.8125rem;
   margin-right: 0.375rem;
 }
+@media screen and (max-width: 768px) {
+  .phone-number__icon-elem--red {
+    fill: #E01F3D;
+  }
+}
 
 .phone-number__text {
   white-space: nowrap;
@@ -339,6 +344,7 @@ img {
   text-decoration: none;
   display: inline-block;
   border: none;
+  cursor: pointer;
 }
 .btn--theme--red {
   background: #E01F3D;
@@ -986,4 +992,43 @@ img {
   .contacts__phone {
     color: #E01F3D;
   }
+}
+@media screen and (max-width: 480px) {
+  .contacts__phone {
+    color: #292929;
+  }
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1.25rem;
+}
+
+.social__item {
+  margin-right: 0.625rem;
+}
+@media screen and (max-width: 480px) {
+  .social__item {
+    margin-right: 0.875rem;
+  }
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__item .social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+}
+
+.social__link {
+  color: #B3B3B3;
+}
+.social__link:hover {
+  color: black;
 }

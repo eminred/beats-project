@@ -15,4 +15,8 @@ color: #292929;
   @include tablets {
     color:#E01F3D;
   }
+
+  @include phones {
+    color: #292929;
+  }
 }
