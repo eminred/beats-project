@@ -1,0 +1,18 @@
+.contacts {
+font-size: rem(18px);
+color: #292929;
+
+@include phones {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+.contacts__phone {
+
+  @include tablets {
+    color:#E01F3D;
+  }
+}

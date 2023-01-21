@@ -1,3 +1,12 @@
-.feature {
-  display: flex;
+.map-section {
+  position: relative;
+  background: url(../img/map.png) no-repeat center center / 100% auto;
+
+ @include tablets {
+    background-size: 170% auto;
+  }
+
+  @include phones {
+    background-size: 280% auto;
+  }
 }

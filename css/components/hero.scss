@@ -45,7 +45,10 @@
     text-align: center;
 
     &:before {
-      content: url("../img/headphones_tablets.png");
+      content: "";
+      width: rem(323px);
+      height: rem(323px);
+      background: url("../img/headphones_tablets.png") center center / contain no-repeat;
       margin-bottom: 60px;
     }
   }
@@ -68,6 +71,10 @@ padding-bottom: rem(10px);
 @include tablets {
   padding: 0 25%;
 }
+
+@include phones {
+  padding: 0 16%;
+}
 }
 
 .hero__main-title{
@@ -83,6 +90,11 @@ padding-bottom: rem(10px);
 
   @include tablets {
     padding: 0 5%;
+  }
+
+  @include phones {
+    font-size: rem(32px);
+    padding: 0 12%;
   }
 }
 

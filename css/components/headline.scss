@@ -7,6 +7,12 @@
   color: #292929;
   text-align: center;
 
+  @include phones {
+    font-size: rem(32px);
+    color: #000000
+    ;
+  }
+
 }
 
 .benefits__subtitle {
@@ -16,6 +22,10 @@
 
   @include tablets {
     padding: 0 15%;
+  }
+
+  @include phones {
+    padding: 0 10%;
   }
 }
 

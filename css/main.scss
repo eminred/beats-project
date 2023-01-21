@@ -4,7 +4,7 @@ $baseFontSize: 16px;
 //breakpoints
 
 $tablets: 768px;
-$phones:480px;
+$phones: 480px;
 
 //colors
 $grey: #F5F5F5;
@@ -41,7 +41,9 @@ $white: #fff;
 @import "./components/radio.scss";
 @import "./components/fixed-menu.scss";
 @import "./components/hamburger.scss";
-
+@import "./components/map";
+@import "./components/footer";
+@import "./components/contacts";
 
 
 

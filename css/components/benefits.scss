@@ -1,11 +1,19 @@
 .benefits__list{
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .benefits__item{
   flex: 1;
   padding: 0 3%;
   position: relative;
+
+  @include phones {
+    padding: 0;
+  }
 
   &:before{
     content: url("../../img/shape.svg");
