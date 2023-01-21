@@ -11,7 +11,7 @@ $grey: #F5F5F5;
     position: absolute;
     bottom: rem(-28px);
     right: 25%;
-    content: url("../../img/rectangle.svg");
+    content: url("../img/rectangle.svg");
   }
 }
 
@@ -21,7 +21,7 @@ $grey: #F5F5F5;
   justify-content: space-between;
   height: 100%;
   padding: rem(24px) 0 rem(45px);
-  background: url("../../img/ellipse5.svg") right center / 50% auto no-repeat;
+  background: url("../img/ellipse5.svg") right center / 50% auto no-repeat;
 }
 
 .hero__title-section{

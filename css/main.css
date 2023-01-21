@@ -90,7 +90,7 @@ img {
   position: absolute;
   bottom: -1.75rem;
   right: 25%;
-  content: url("../../img/rectangle.svg");
+  content: url("../img/rectangle.svg");
 }
 
 .hero__container {
@@ -106,7 +106,7 @@ img {
           justify-content: space-between;
   height: 100%;
   padding: 1.5rem 0 2.8125rem;
-  background: url("../../img/ellipse5.svg") right center/50% auto no-repeat;
+  background: url("../img/ellipse5.svg") right center/50% auto no-repeat;
 }
 
 .hero__title-section {
@@ -367,7 +367,7 @@ img {
   position: relative;
 }
 .benefits-section:before {
-  content: url("../../img/triangle_red.svg");
+  content: url("../img/triangle_red.svg");
   position: absolute;
   bottom: -1.5625rem;
   left: 25%;
@@ -483,14 +483,14 @@ img {
   position: relative;
 }
 .reviews-section:before {
-  content: url("../../img/circle.svg");
+  content: url("../img/circle.svg");
   position: absolute;
   bottom: -1.5625rem;
   left: 25%;
 }
 
 .order-section {
-  background: url("../../img/bg_order.png") no-repeat center center/100% auto;
+  background: url("../img/bg_order.png") no-repeat center center/100% auto;
 }
 
 .form {
