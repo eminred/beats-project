@@ -1,6 +1,10 @@
 $containerWidth: 940px;
 $baseFontSize: 16px;
 
+html {
+  font-size: $baseFontSize;
+}
+
 html,
 body{
   height: 100%;
@@ -8,7 +12,6 @@ body{
 
 body {
   font-family: Play;
-  font-size: $baseFontSize;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,13 +22,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: $containerWidth + 20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: $containerWidth;
+  width: 95%;
+  max-width: $containerWidth;
   margin: 0 auto;
   position: relative;
 }

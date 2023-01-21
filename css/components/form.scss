@@ -5,7 +5,7 @@
 
 .form__col{
   flex: 1;
-  margin-right: 20px;
+  margin-right: rem(20px);
 
   &:last-child{
     margin-right: 0;
@@ -14,12 +14,12 @@
 
 .form__row{
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: rem(18px);
 }
 
 .form__block{
   flex: 1;
-  margin-right: 20px;
+  margin-right: rem(20px);
 
 
   &:last-child{
@@ -30,13 +30,13 @@
 .form__input{
   width: 100%;
   border: none;
-  padding: 18px 11px;
-  border: solid 3px transparent;
-  border-radius: 5px;
+  padding: rem(18px) rem(11px);
+  border: solid rem(3px) transparent;
+  border-radius: rem(5px);
 
 
   &--textarea{
-    height: 161px;
+    height: rem(161px);
     resize: none;
   }
 
@@ -49,6 +49,6 @@
 .form__controls{
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: rem(25px);
 }
 

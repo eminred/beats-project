@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 html,
 body {
   height: 100%;
@@ -5,7 +9,6 @@ body {
 
 body {
   font-family: Play;
-  font-size: 16px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,13 +19,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
 }

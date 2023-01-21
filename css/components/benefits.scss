@@ -10,7 +10,7 @@
   &:before{
     content: url("../../img/shape.svg");
     position: absolute;
-    top: 60px;
+    top: rem(60px);
     right: 0;
     transform: translateX(50%);
   }

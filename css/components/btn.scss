@@ -1,9 +1,11 @@
+
+
 .btn {
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: bold;
-  padding: 18px 42px;
+  padding: rem(18px) rem(42px);
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: rem(100px);
   line-height: 1;
   text-decoration: none;
   display: inline-block;
@@ -12,7 +14,7 @@
 
   &--theme--red {
     background: #E01F3D;
-    color: #fff;
+    color: $white;
 
     &:hover {
       background: #CA1B36;
@@ -24,7 +26,7 @@
     color: #fff;
     font-weight: 400;
     text-transform:none ;
-    padding-left: 16px;
+    padding-left: rem(16px);
 
 
 

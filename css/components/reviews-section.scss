@@ -3,7 +3,7 @@
   &:before{
     content: url("../../img/circle.svg");
     position: absolute;
-    bottom: -25px;
+    bottom: rem(-25px);
     left: 25%;
   }
 }

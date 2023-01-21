@@ -4,7 +4,7 @@
   &:before{
     content: url("../../img/triangle_red.svg");
     position: absolute;
-    bottom: -25px;
+    bottom: rem(-25px);
     left: 25%;
   }
 }
