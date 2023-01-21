@@ -4,6 +4,16 @@
 html {
   font-size: 16px;
 }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
 
 html,
 body {
@@ -86,6 +96,11 @@ img {
   color: #292929;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .hero:after {
+    display: none;
+  }
+}
 .hero:after {
   position: absolute;
   bottom: -1.75rem;
@@ -108,9 +123,45 @@ img {
   padding: 1.5rem 0 2.8125rem;
   background: url("../img/ellipse5.svg") right center/50% auto no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .hero__container {
+    background: none;
+  }
+}
 
 .hero__title-section {
   width: 46%;
+}
+@media screen and (max-width: 768px) {
+  .hero__title-section {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .hero__title-section:before {
+    content: url("../img/headphones_tablets.png");
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__icons-section {
+    display: none;
+  }
 }
 
 .hero__title-desc {
@@ -120,6 +171,11 @@ img {
   margin-bottom: 2.25rem;
   padding-right: 25%;
   padding-bottom: 0.625rem;
+}
+@media screen and (max-width: 768px) {
+  .hero__title-desc {
+    padding: 0 25%;
+  }
 }
 
 .hero__main-title {
@@ -132,6 +188,11 @@ img {
   font-style: normal;
   font-weight: 700;
   color: #292929;
+}
+@media screen and (max-width: 768px) {
+  .hero__main-title {
+    padding: 0 5%;
+  }
 }
 
 .header {
@@ -147,6 +208,18 @@ img {
   font-family: "Alegreya Sans";
   font-size: 1.125rem;
   line-height: 1.875rem;
+}
+
+@media screen and (max-width: 768px) {
+  .phone-number.header__phone-number {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__list {

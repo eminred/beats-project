@@ -1,8 +1,18 @@
 $containerWidth: 940px;
 $baseFontSize: 16px;
+$tablets: 768px;
+$phones:480px;
 
 html {
   font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px; 
+  }   
+
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
 }
 
 html,

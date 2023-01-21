@@ -1,11 +1,16 @@
-$grey: #F5F5F5;
 
 .hero {
-  background:$grey;
+  background: $grey;
   height: 100vh;
   min-height: rem(650px);
   color: #292929;
   position: relative;
+
+  &:after {
+    @include tablets {
+      display: none;
+    }
+  }
 
   &:after{
     position: absolute;
@@ -22,12 +27,35 @@ $grey: #F5F5F5;
   height: 100%;
   padding: rem(24px) 0 rem(45px);
   background: url("../img/ellipse5.svg") right center / 50% auto no-repeat;
+
+  @include tablets {
+    background: none;
+  }
 }
 
 .hero__title-section{
   width: 46%;
+
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:before {
+      content: url("../img/headphones_tablets.png");
+    }
+  }
 }
 
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
+}
 
 .hero__title-desc{
   font-family: 'Alegreya Sans';
@@ -36,6 +64,10 @@ line-height: rem(25px);
 margin-bottom: rem(36px);
 padding-right: 25%;
 padding-bottom: rem(10px);
+
+@include tablets {
+  padding: 0 25%;
+}
 }
 
 .hero__main-title{
@@ -48,5 +80,9 @@ padding-bottom: rem(10px);
   font-style: normal;
   font-weight: 700;
   color: #292929;
+
+  @include tablets {
+    padding: 0 5%;
+  }
 }
 

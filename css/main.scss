@@ -10,8 +10,9 @@ $phones:480px;
 $grey: #F5F5F5;
 $white: #fff;
 
-@import "./layout.scss";
 @import "./media.scss";
+
+@import "./layout.scss";
 
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
