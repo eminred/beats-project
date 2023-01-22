@@ -14,9 +14,14 @@
   &:after{
     position: absolute;
     bottom: rem(-28px);
-    right: 25%;
+    right: 26%;
     content: url("../img/rectangle.svg");
+
+    @include tablets {
+    content: url("../img/rectangle_tablet.svg");
+    right: 13%;
   }
+}
 }
 
 .hero__container{
@@ -25,7 +30,7 @@
   justify-content: space-between;
   height: 100%;
   padding: rem(24px) 0 rem(45px);
-  background: url("../img/ellipse5.svg") right center / 50% auto no-repeat;
+  background: url("../img/beats_headphones.png") right center / 50% auto no-repeat;
 
   @include tablets {
     background: none;

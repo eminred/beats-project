@@ -1,7 +1,7 @@
 .order-section{
-  background: url("../img/bg_order.png") no-repeat center center / 100% auto /* contain */ ;
+  background: url("../img/bg_order.png") no-repeat center center / cover /*100% auto /* contain */ ;
 
   @include tablets{
-    background: url("../img/bg_order.png") no-repeat center center
+    background: url("../img/bg_order.png") no-repeat center / cover;
   }
 }
