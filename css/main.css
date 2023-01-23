@@ -468,7 +468,7 @@ img {
   }
 }
 .benefits__item:before {
-  content: url("../../img/shape.svg");
+  content: url("../img/shape.svg");
   position: absolute;
   top: 3.75rem;
   right: 0;
