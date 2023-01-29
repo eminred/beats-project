@@ -1,0 +1,92 @@
+.dropdown {
+  position: relative;
+  display: inline-flex;
+cursor: pointer;
+}
+
+.dropdown:hover .dropdown__menu{
+opacity: 1;
+left: 0;
+}
+
+.dropdown__menu {
+  position: absolute;
+background: rgba(255, 255, 255, 0.8);
+box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+backdrop-filter: blur(20px);
+  left: -9999px;
+  padding: rem(10px);
+  width: rem(254px);
+	margin-left: rem(91px);
+	border-radius: rem(4px);
+  opacity: 0;
+  height: rem(300px);
+  display: flex;
+  justify-content: start;
+}
+
+.dropdown__menu:before {
+  content: "";
+  display: block;
+  height: 300px;
+  left: 0;
+  right: 0;
+  top: -29px;
+  position: absolute;
+}
+
+.dropdown__list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dropdown__item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.dropdown__item_img{
+  width: rem(35px);
+  height: rem(50px);
+  margin-bottom: rem(10px);
+}
+
+.dropdown_item_name {
+  padding-top:rem(14px);
+  font-size: rem(16px);
+line-height:rem(24px);
+color: black;
+  //padding-right: rem(70px);
+    padding-left:rem(10px);
+
+    &--bluetooth{
+      padding-right:rem(85px);
+    }
+
+    &--distance{
+      padding-right:rem(70px) ;
+    }
+
+    &--charge{
+      padding-right:rem(95px) ;
+    }
+
+    &--weight{
+      padding-right:rem(110px) ;
+
+    }
+
+    &--waranty{
+      padding-right:rem(70px) ;
+
+    }
+}
+
+.dropdown__item_range{
+  padding-top: rem(14px);
+    font-size: rem(16px);
+line-height:rem(24px);
+color: black;
+}

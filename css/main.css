@@ -1121,6 +1121,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 4.0625rem;
 }
 
 .slider__item {
@@ -1260,4 +1261,171 @@ img {
 .info__text {
   color: #000000;
   font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown__menu {
+  opacity: 1;
+  left: 0;
+}
+
+.dropdown__menu {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+          box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  left: -9999px;
+  padding: 0.625rem;
+  width: 15.875rem;
+  margin-left: 5.6875rem;
+  border-radius: 0.25rem;
+  opacity: 0;
+  height: 18.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.dropdown__menu:before {
+  content: "";
+  display: block;
+  height: 300px;
+  left: 0;
+  right: 0;
+  top: -29px;
+  position: absolute;
+}
+
+.dropdown__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.dropdown__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.dropdown__item_img {
+  width: 2.1875rem;
+  height: 3.125rem;
+  margin-bottom: 0.625rem;
+}
+
+.dropdown_item_name {
+  padding-top: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: black;
+  padding-left: 0.625rem;
+}
+.dropdown_item_name--bluetooth {
+  padding-right: 5.3125rem;
+}
+.dropdown_item_name--distance {
+  padding-right: 4.375rem;
+}
+.dropdown_item_name--charge {
+  padding-right: 5.9375rem;
+}
+.dropdown_item_name--weight {
+  padding-right: 6.875rem;
+}
+.dropdown_item_name--waranty {
+  padding-right: 4.375rem;
+}
+
+.dropdown__item_range {
+  padding-top: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: black;
+}
+
+.fullscreen-menu.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #313131;
+  z-index: 1000;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu--vertical .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu--vertical {
+  font-size: 2.25rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .menu--vertical {
+    display: block;
+  }
+}
+
+.fullscreen-menu__close-elem {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.hamburger:active .fullscreen-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }

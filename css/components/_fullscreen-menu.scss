@@ -1,0 +1,47 @@
+.fullscreen-menu.active{
+  display: flex;
+  display: none;
+}
+
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  background: #313131;
+  z-index: 1000;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu--vertical .menu__list{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu--vertical{
+font-size: rem(36px);
+color:#fff;
+text-align: center;
+font-weight: 400;
+
+@include tablets {
+  display: block;
+}
+
+}
+//.fullscreen-menu__close {
+//transform: translate(350px, -180px);
+//}
+
+.fullscreen-menu__close-elem{
+  width: rem(20px);
+  height: rem(20px);
+}
+
+.hamburger:active .fullscreen-menu{
+  display: inline-flex;
+}
