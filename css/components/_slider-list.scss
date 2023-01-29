@@ -7,6 +7,7 @@ right: 0;
   width: rem(900px);
   overflow: hidden;
   display: flex;
+  justify-content: center;
 
 }
 }
@@ -24,11 +25,36 @@ right: 0;
       width: 45%;
       padding-top: rem(150px);
       margin-left: rem(30px);
+
+      @include tablets {
+        display: none;
+      }
     }
   }
 
   &__content{
     width: 45%;
+
+      @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: rem(93px);
+
+        
+    &:before {
+      content: "";
+      width: rem(306px);
+      height: rem(306px);
+      background: url("../img/headphones_product-tablet.png") center center / contain no-repeat;
+      margin-bottom: 60px;
+    }
+  
+    }
   }
 
   &__title{
@@ -37,6 +63,19 @@ right: 0;
     line-height: rem(42px);
     text-transform: uppercase;
     color: #292929;
+
+    @include tablets {
+
+    font-size: 28px;
+    line-height: 32px;
+
+  }
+
+  @include phones{
+    padding: 0 13%;
+
+  }
+
 
     &-wrap {
       margin-bottom: rem(24px);
@@ -55,11 +94,23 @@ margin-top: rem(66px);
       width: rem(91px);
       height: rem(91px);
     }
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &__desc{
     margin-bottom: rem(27px);
     padding-right: 28px;
+    @include tablets {
+    padding: 0 10%;
+    }
+
+    @include phones{
+      padding: 0 26%;
+  
+    }
 
   }
 

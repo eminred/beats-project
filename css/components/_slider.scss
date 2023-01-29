@@ -16,6 +16,18 @@
   position: absolute;
   top: 50%;
 
+  @include tablets {
+    top: 25%;
+    padding: 0 10%;
+  }
+
+  
+  @include phones {
+    top: 25%;
+    padding: 0 4%;
+  }
+
+
   &:hover{
     cursor: pointer;
   }
@@ -31,6 +43,8 @@
     width: rem(24px);
     height: rem(40px);
   }
+
+
 }
 
 }

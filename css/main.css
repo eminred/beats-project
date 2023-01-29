@@ -1079,6 +1079,18 @@ img {
   position: absolute;
   top: 50%;
 }
+@media screen and (max-width: 768px) {
+  .slider__arrow {
+    top: 25%;
+    padding: 0 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__arrow {
+    top: 25%;
+    padding: 0 4%;
+  }
+}
 .slider__arrow:hover {
   cursor: pointer;
 }
@@ -1106,6 +1118,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slider__item {
@@ -1125,8 +1140,43 @@ img {
   padding-top: 9.375rem;
   margin-left: 1.875rem;
 }
+@media screen and (max-width: 768px) {
+  .slide__img-wrap {
+    display: none;
+  }
+}
 .slide__content {
   width: 45%;
+}
+@media screen and (max-width: 768px) {
+  .slide__content {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: 5.8125rem;
+  }
+  .slide__content:before {
+    content: "";
+    width: 19.125rem;
+    height: 19.125rem;
+    background: url("../img/headphones_product-tablet.png") center center/contain no-repeat;
+    margin-bottom: 60px;
+  }
 }
 .slide__title {
   font-weight: 700;
@@ -1134,6 +1184,17 @@ img {
   line-height: 2.625rem;
   text-transform: uppercase;
   color: #292929;
+}
+@media screen and (max-width: 768px) {
+  .slide__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slide__title {
+    padding: 0 13%;
+  }
 }
 .slide__title-wrap {
   margin-bottom: 1.5rem;
@@ -1153,9 +1214,24 @@ img {
   width: 5.6875rem;
   height: 5.6875rem;
 }
+@media screen and (max-width: 768px) {
+  .slide__params {
+    display: none;
+  }
+}
 .slide__desc {
   margin-bottom: 1.6875rem;
   padding-right: 28px;
+}
+@media screen and (max-width: 768px) {
+  .slide__desc {
+    padding: 0 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slide__desc {
+    padding: 0 26%;
+  }
 }
 .slide__info {
   display: -webkit-box;
