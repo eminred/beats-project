@@ -1053,3 +1053,135 @@ img {
 .social__link:hover {
   color: black;
 }
+
+.slider {
+  height: 100vh;
+  min-height: 40.625rem;
+  background: #F8FAF9;
+}
+.slider__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+}
+.slider__arrow:hover {
+  cursor: pointer;
+}
+.slider__arrow--left {
+  left: 0;
+}
+.slider__arrow--right {
+  right: 0;
+}
+.slider__arrow--icon {
+  width: 1.5rem;
+  height: 2.5rem;
+}
+
+.slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  right: 0;
+}
+.slider__list-wrap {
+  width: 56.25rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__item {
+  width: 56.25rem;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.slide__img-wrap {
+  width: 45%;
+  padding-top: 9.375rem;
+  margin-left: 1.875rem;
+}
+.slide__content {
+  width: 45%;
+}
+.slide__title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  text-transform: uppercase;
+  color: #292929;
+}
+.slide__title-wrap {
+  margin-bottom: 1.5rem;
+}
+.slide__params {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.0625rem rem 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5625rem;
+  margin-top: 4.125rem;
+}
+.slide__params_img {
+  width: 5.6875rem;
+  height: 5.6875rem;
+}
+.slide__desc {
+  margin-bottom: 1.6875rem;
+  padding-right: 28px;
+}
+.slide__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.slide__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 7.75rem;
+}
+.slide__price {
+  color: #151515;
+  font-size: 2.25rem;
+  margin-right: 0.8125rem;
+}
+
+.info {
+  margin-right: 5rem;
+}
+.info:last-child {
+  margin-right: 0;
+}
+.info__text {
+  color: #000000;
+  font-weight: 700;
+}

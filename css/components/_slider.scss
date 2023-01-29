@@ -1,0 +1,38 @@
+.slider {
+  height: 100vh;
+  min-height: rem(650px);
+
+  background: #F8FAF9;
+
+&__container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+&__arrow{
+  position: absolute;
+  top: 50%;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &--left {
+    left:0
+  }
+
+  &--right{
+    right: 0;
+  }
+  &--icon {
+    width: rem(24px);
+    height: rem(40px);
+  }
+}
+
+}
+
+
