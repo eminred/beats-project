@@ -431,7 +431,9 @@
   </div>
   <script>
     
-    document.getElementById('openOverlay').onclick = function() {
+    document.getElementById('openOverlay').onclick = function(event) {
+      event.preventDefault();
+      
       document.getElementById('overlayTemplate').classList.add('active');
     }
     

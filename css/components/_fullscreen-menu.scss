@@ -47,6 +47,11 @@ font-weight: 400;
 
 }
 
+.menu__item {
+  @include tablets{
+    margin-right: 0;
+  }
+}
 
 //.hamburger:active .fullscreen-menu{
 //  display: inline-flex;

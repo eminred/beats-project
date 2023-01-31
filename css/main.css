@@ -1430,6 +1430,12 @@ img {
   height: 1.25rem;
 }
 
+@media screen and (max-width: 768px) {
+  .menu__item {
+    margin-right: 0;
+  }
+}
+
 /*.overlay {
   position: absolute;
   top: 0;
