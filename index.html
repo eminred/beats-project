@@ -410,9 +410,9 @@
       <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
-  <script type="html/template" id="overlayTemplate">
-  <div class="fullscreen-menu active">
-    <a href="" class="fullscreen-menu__close">
+  <!--<script type="html/template" id="overlayTemplate">-->
+  <div class="fullscreen-menu" id="overlayTemplate">
+    <a href="" class="fullscreen-menu__close" id="close">
       <svg class="fullscreen-menu__close-elem">
         <use xlink:href="./sprite.svg#close_menu"></use>
       </svg>
@@ -429,7 +429,17 @@
       </ul>
     </nav>
   </div>
-</script>
-  <script src="./scripts/menu.js"></script>
+  <script>
+    
+    document.getElementById('openOverlay').onclick = function() {
+      document.getElementById('overlayTemplate').classList.add('active');
+    }
+    
+    document.getElementById('close').onclick = function() {
+      document.getElementById('overlayTemplate').classList.remove('active');
+    }
+      </script>
+<!--</script>
+  <script src="./scripts/menu.js"></script>-->
 </body>
 </html> 

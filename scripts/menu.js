@@ -1,4 +1,4 @@
-const openButton = document.querySelector("#openOverlay");
+/*const openButton = document.querySelector("#openOverlay");
 const successModal = createModal("");
 const body = document.body;
 
@@ -6,14 +6,18 @@ openButton.addEventListener("click", e => {
   body.appendChild(successModal);
 })
 
-function createModal(content){
- const overlayElement = document.createElement ("div");
- overlayElement.classList.add("overlay");
+function createModal(content) {
+  const overlayElement = document.createElement("div");
+  overlayElement.classList.add("overlay");
 
-   const template = document.querySelector("#overlayTemplate");
+  const template = document.querySelector("#overlayTemplate");
 
   overlayElement.innerHTML = template.innerHTML;
-
+  overlayElement.addEventListener("click", e => {
+    if (e.target === overlayElement) {
+      closeElement.click();
+    }
+  })
 
   const closeElement = overlayElement.querySelector(".fullscreen-menu__close");
   closeElement.addEventListener("click", e => {
@@ -21,9 +25,13 @@ function createModal(content){
     body.removeChild(overlayElement);
   })
 
-    
-  //const contentElement = overlayElement.querySelector(".content");
-  //contentElement.innerHTML = content;
-
   return overlayElement;
+}*/
+
+/*document.getElementById('openOverlay').onclick = function() {
+  document.getElementById('overlayTemplate').classList.add('open');
 }
+
+document.getElementById('close').onclick = function() {
+  document.getElementById('overlayTemplate').classList.remove('open');
+}*/
