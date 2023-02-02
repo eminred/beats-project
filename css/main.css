@@ -1169,7 +1169,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    margin-top: 5.8125rem;
+    /*margin-top: rem(93px);*/
   }
   .slide__content:before {
     content: "";
