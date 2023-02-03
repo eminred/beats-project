@@ -7,7 +7,7 @@
   <title>Beats</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
+<body id="body">
   <div class="wrapper">
     <div class="maincontent">
       <section class="hero">
@@ -435,10 +435,14 @@
       event.preventDefault();
       
       document.getElementById('overlayTemplate').classList.add('active');
+      document.getElementById('body').classList.add('menu-open');
     }
+
+
     
     document.getElementById('close').onclick = function() {
       document.getElementById('overlayTemplate').classList.remove('active');
+      document.getElementById('body').classList.remove('menu-open');
     }
       </script>
 <!--</script>

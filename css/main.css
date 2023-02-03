@@ -1397,6 +1397,10 @@ img {
   display: flex;
 }
 
+.menu-open {
+  overflow: hidden;
+}
+
 .menu--vertical .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
