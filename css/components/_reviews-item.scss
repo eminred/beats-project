@@ -1,0 +1,25 @@
+.reviews__list{
+  position: relative;
+  min-height: rem(280px);
+}
+
+.reviews__item{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: .3s;
+  opacity: 0;
+}
+
+.reviews__item.active{
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.reviews__switcher-item.active{
+  border-color:  #E01F3D;
+}

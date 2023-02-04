@@ -1485,3 +1485,29 @@ img {
 .fullscreen-menu__close:hover {
   background: #d33;
 }*/
+.reviews__list {
+  position: relative;
+  min-height: 17.5rem;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.reviews__item.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.reviews__switcher-item.active {
+  border-color: #E01F3D;
+}
