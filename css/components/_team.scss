@@ -94,18 +94,22 @@ font-size: 16px;
 
 
 
-/*.team__icon{
+.team__icon{
   width: rem(9px);
   height: rem(9px);
   margin-left: rem(4px);
   transform: rotate(180deg);
+
+  @include phones{
+    color: #E01F3D;
+  }
 }
 
-.team__icon.active  {
+.team__item.active .team__icon {
   transform: rotate(360deg);
-}*/
+}
 
-.team__item {
+/*.team__item {
   
   &:before{
     content:"";
@@ -155,4 +159,4 @@ font-size: 16px;
     }
     }
   
-}
+}*/
