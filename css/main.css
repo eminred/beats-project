@@ -1120,7 +1120,7 @@ img {
 }
 
 .slider__arrow {
-  background: url("../../img/arrow_right.svg") center center no-repeat;
+  background: url("../img/arrow_right.svg") center center no-repeat;
   background-size: contain;
   display: block;
   width: 0.8125rem;
@@ -1597,4 +1597,108 @@ img {
 
 .reviews__switcher-item.active {
   border-color: #E01F3D;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    padding: 0 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.team__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  margin-right: 1.25rem;
+  position: relative;
+  max-width: 14.4375rem;
+}
+@media screen and (max-width: 768px) {
+  .team__item {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+    margin-right: 0;
+  }
+}
+
+.team__member {
+  height: 18.125rem;
+  margin-bottom: 1.25rem;
+}
+
+.team__title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #292929;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.team--desktop .team__content {
+  position: absolute;
+  top: 100%;
+}
+
+.team__content {
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+  height: 0;
+}
+
+.team__content-block {
+  padding-bottom: 0.3125rem;
+}
+
+.team--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team--desktop {
+    display: none;
+  }
+}
+
+.team--mobile .team__item {
+  margin-bottom: 0.625rem;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
 }
