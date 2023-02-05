@@ -1,3 +1,56 @@
+.slider__list-wrap{
+  position: relative;
+
+  .bx-wrapper{
+    border: 0;
+    box-shadow: none;
+    background: #F8FAF9;
+  }
+}
+
+.slider__arrow{
+  background: url("../../img/arrow_right.svg") center center no-repeat; 
+  background-size: contain;
+  display: block;
+  width: rem(13px);
+  height: rem(28px);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  &--right {
+    right: 0;
+
+    @include tablets {
+      top: 20%;
+      left: 78%;
+    }
+  
+    
+    @include phones {
+      top: 17%;
+      left: 87%;
+    }
+  }
+
+  &--left{
+    left: 0;
+    transform: rotate(-180deg);
+
+    @include tablets {
+      top: 18%;
+      left: 21%;
+    }
+  
+    
+    @include phones {
+      top: 15%;
+      left: 11%;
+    }
+  }
+}
+
 .slider__list {
 display: flex;
 position: relative;
@@ -54,7 +107,28 @@ right: 0;
       background: url("../img/headphones_product-tablet.png") center center / contain no-repeat;
       margin-bottom: 60px;
     }
-  
+    }
+
+    &--two{
+      @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /*margin-top: rem(93px);*/
+
+        
+    &:before {
+      content: "";
+      width: rem(306px);
+      height: rem(306px);
+      background: url("../img/beats_red.png") center center / contain no-repeat;
+      margin-bottom: 60px;
+    }
+    }
     }
   }
 
@@ -64,6 +138,15 @@ right: 0;
     line-height: rem(42px);
     text-transform: uppercase;
     color: #292929;
+
+    &--two{
+      font-weight: 700;
+      font-size: rem(36px);
+      line-height: rem(42px);
+      text-transform: uppercase;
+      color: #292929;
+      width: rem(407px);
+    }
 
     @include tablets {
 
@@ -105,11 +188,11 @@ margin-top: rem(66px);
     margin-bottom: rem(27px);
     padding-right: 28px;
     @include tablets {
-    padding: 0 10%;
+    //padding: 0 10%;
     }
 
     @include phones{
-      padding: 0 26%;
+     // padding: 0 26%;
   
     }
 
