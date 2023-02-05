@@ -65,6 +65,10 @@
     outline: none;
   }
 
+  &.input-error{
+    border-color: #E01F3D;
+  }
+
 }
 
 .form__controls{

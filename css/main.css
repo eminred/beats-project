@@ -796,6 +796,9 @@ img {
   border-color: #E01F3D;
   outline: none;
 }
+.form__input.input-error {
+  border-color: #E01F3D;
+}
 
 .form__controls {
   display: -webkit-box;
@@ -1753,7 +1756,7 @@ button {
     display: flex;
     width: 0.5625rem;
     height: 0.5625rem;
-    background: url(../img/red_triangle.svg) center center no-repeat;
+    background: url(../img/green_triangle.svg) center center no-repeat;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
     right: 5%;
@@ -1769,7 +1772,7 @@ button {
   display: flex;
   width: 0.5625rem;
   height: 0.5625rem;
-  background: url(../img/red_triangle.svg) center center no-repeat;
+  background: url(../img/green_triangle.svg) center center no-repeat;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   right: 5%;
@@ -1783,11 +1786,47 @@ button {
     display: flex;
     width: 0.5625rem;
     height: 0.5625rem;
-    background: url(../img/red_triangle.svg) center center no-repeat;
+    background: url(../img/green_triangle.svg) center center no-repeat;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     right: 5%;
     top: 7px;
     position: absolute;
   }
+}
+
+.modal {
+  display: none;
+}
+.modal.error-modal .modal__content {
+  color: red;
+}
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+.modal .fancybox-button {
+  display: none;
+}
+
+.modal__container {
+  background: #fff;
+  padding: 2.1875rem 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 0.9375rem;
+  color: #000000;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: bold;
 }
