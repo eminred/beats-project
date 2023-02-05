@@ -1206,7 +1206,7 @@ img {
   }
 }
 .slide__content {
-  width: 45%;
+  width: 46%;
 }
 @media screen and (max-width: 768px) {
   .slide__content {
@@ -1281,7 +1281,13 @@ img {
   line-height: 2.625rem;
   text-transform: uppercase;
   color: #292929;
-  width: 25.4375rem;
+}
+@media screen and (max-width: 768px) {
+  .slide__title--two {
+    width: auto;
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 @media screen and (max-width: 768px) {
   .slide__title {
@@ -1670,6 +1676,9 @@ img {
   transition: height 0.3s;
   height: 0;
 }
+.team__content--open {
+  height: 23.25rem;
+}
 
 .team__content-block {
   padding-bottom: 0.3125rem;
@@ -1701,4 +1710,84 @@ button {
   background: transparent;
   cursor: pointer;
   padding: 0;
+}
+
+.team__job-title {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.team__job-desc {
+  color: #666666;
+}
+
+/*.team__icon{
+  width: rem(9px);
+  height: rem(9px);
+  margin-left: rem(4px);
+  transform: rotate(180deg);
+}
+
+.team__icon.active  {
+  transform: rotate(360deg);
+}*/
+.team__item:before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 0.5625rem;
+  height: 0.5625rem;
+  background: url(../img/red_triangle.svg) center center no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: 5%;
+  top: 318px;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .team__item:before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 0.5625rem;
+    height: 0.5625rem;
+    background: url(../img/red_triangle.svg) center center no-repeat;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    right: 5%;
+    top: 7px;
+    position: absolute;
+  }
+}
+
+.team__item.active:before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 0.5625rem;
+  height: 0.5625rem;
+  background: url(../img/red_triangle.svg) center center no-repeat;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  right: 5%;
+  top: 318px;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .team__item.active:before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 0.5625rem;
+    height: 0.5625rem;
+    background: url(../img/red_triangle.svg) center center no-repeat;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    right: 5%;
+    top: 7px;
+    position: absolute;
+  }
 }

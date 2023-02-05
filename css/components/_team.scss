@@ -46,6 +46,10 @@ top: 100%;
   overflow: hidden;
   transition: height .3s;
   height: 0;
+
+  &--open{
+    height: rem(372px);
+  }
 }
 
 .team__content-block{
@@ -76,4 +80,79 @@ button{
   background: transparent;
   cursor: pointer;
   padding: 0;
+}
+
+.team__job-title{
+  color: #000000;
+  font-weight: 400;
+font-size: 16px;
+}
+
+.team__job-desc{
+  color: #666666;
+}
+
+
+
+/*.team__icon{
+  width: rem(9px);
+  height: rem(9px);
+  margin-left: rem(4px);
+  transform: rotate(180deg);
+}
+
+.team__icon.active  {
+  transform: rotate(360deg);
+}*/
+
+.team__item {
+  
+  &:before{
+    content:"";
+    display: flex;
+    width: rem(9px);
+    height: rem(9px);
+    background: url(../img/red_triangle.svg) center center no-repeat;
+    transform: rotate(180deg);
+    right: 5%;
+    top: 318px;
+    position: absolute;
+
+    @include tablets {
+      display: flex;
+      width: rem(9px);
+      height: rem(9px);
+      background: url(../img/red_triangle.svg) center center no-repeat;
+      transform: rotate(180deg);
+      right: 5%;
+      top: 7px;
+      position: absolute;
+    }
+  }
+}
+
+.team__item.active{
+    &:before{
+      content:"";
+      display: flex;
+      width: rem(9px);
+      height: rem(9px);
+      background: url(../img/red_triangle.svg) center center no-repeat;
+      transform: rotate(360deg);
+      right: 5%;
+    top: 318px;
+    position: absolute;
+
+    @include tablets {
+      display: flex;
+      width: rem(9px);
+      height: rem(9px);
+      background: url(../img/red_triangle.svg) center center no-repeat;
+      transform: rotate(360deg);
+      right: 5%;
+      top: 7px;
+      position: absolute;
+    }
+    }
+  
 }

@@ -206,10 +206,16 @@
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" id="black_rectangle">
     <rect x="11.6755" width="24" height="24" transform="rotate(29.1093 11.6755 0)" fill="#292929"></rect>
   </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" id="red_triangle">
+    <path d="M4.00002 0.5L7.89713 7.25L0.102901 7.25L4.00002 0.5Z" fill="#E01F3D"></path>
+  </symbol>
 </svg>
 
 
 <!--
+  <svg class="icon">
+  <use xlink:href="#red_triangle"></use>
+</svg>
   <svg class="icon">
   <use xlink:href="#black_rectangle"></use>
 </svg>

@@ -87,7 +87,7 @@ right: 0;
   }
 
   &__content{
-    width: 45%;
+    width: 46%;
 
       @include tablets {
         width: 100%;
@@ -145,7 +145,12 @@ right: 0;
       line-height: rem(42px);
       text-transform: uppercase;
       color: #292929;
-      width: rem(407px);
+
+      @include tablets{
+        width: auto;
+        font-size: 28px;
+        line-height: 32px;
+      }
     }
 
     @include tablets {
