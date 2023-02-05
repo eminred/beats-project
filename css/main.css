@@ -1772,7 +1772,7 @@ button {
   display: flex;
   width: 0.5625rem;
   height: 0.5625rem;
-  background: url(../img/green_triangle.svg) center center no-repeat;
+  background: url(../img/red_triangle.svg) center center no-repeat;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   right: 5%;
