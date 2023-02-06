@@ -31,6 +31,8 @@ if (isValid) {
 const request = $.ajax({
   url: "https://webdev-api.loftschool.com/sendmail",
   method: "post",
+  //headers: { 'content-Type': 'application/json'},
+  //dataType: "json",
   data: {
     name: name.val(),
     phone: phone.val(),
@@ -45,11 +47,15 @@ error: (data) => {
 request.done((data) => {
   content.text(data.message);
 });
-request.fail((data) =>{
+request.fail(() =>{
+  content.text("Сообщение не отправлено");
+  modal.addClass("error-modal");
+});
+/*request.fail((data) =>{
   const message = data.responseJSON.message;
   content.text(message);
   modal.addClass("error-modal");
-});
+});*/
 request.always(()=>{
   $.fancybox.open({
     src:"#modal",
