@@ -1837,3 +1837,119 @@ button {
   line-height: 1.5rem;
   font-weight: bold;
 }
+
+.player-section {
+  background: #F8FAF9;
+}
+
+.player-section__container {
+  width: 41.375rem;
+  height: 24.5rem;
+  margin-left: 9.0625rem;
+}
+
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.player.active .player__splash {
+  display: none;
+}
+.player.paused .player__start {
+  width: 0.875rem;
+  height: 1.375rem;
+  border: none;
+}
+.player.paused .player__start:after, .player.paused .player__start:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.3125rem;
+  top: 0;
+  bottom: 0;
+  background: #333333;
+}
+.player.paused .player__start:after {
+  right: 38.9375rem;
+  background: white;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.player.paused .player__start:before {
+  left: 1.4375rem;
+  background: white;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.player.active.paused .player__icon {
+  display: none;
+}
+
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/splashscreen.png) center center/cover no-repeat;
+  cursor: pointer;
+}
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2.1875rem;
+  background: #151515;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1.5625rem;
+}
+
+.player__icon {
+  width: 0.6875rem;
+  height: 1rem;
+}
+
+.player__playback {
+  height: 1rem;
+  width: 27.625rem;
+  position: relative;
+}
+.player__playback:before {
+  content: "";
+  height: 0.25rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: #333333;
+  display: block;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.player__playback-button {
+  background: #E01F3D;
+  border-radius: 3.125rem;
+  border: none;
+  width: 0.875rem;
+  height: 0.875rem;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 0;
+}

@@ -792,6 +792,34 @@
           </div>
         </div>
       </section>
+      <section class="section player-section">
+        <div class="container">
+          <h2 class="section__title">Как мы работаем</h2>
+          <div class="player-section__container">
+            <div class="player">
+              <div class="player__wrapper">
+                <div id="yt-player"  class="player__elem"></div>
+                <div class="player__splash"></div>
+              </div>
+              <div class="player__controls">
+                <button class="player__start">
+                  <svg class="player__icon">
+                    <use xlink:href="./sprite.svg#player_start"></use>
+                  </svg>
+                </button>
+                <div class="player__playback">
+                  <button class="player__playback-button">
+                  </button>
+                </div>
+                <div class="player__duration">
+                  <span class="player__duration-completed">0:00</span> :
+                  <span class="player__duration-estimate">0:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section order-section">
         <div class="container">
           <h2 class="section__title section__title--white">Закажите доставку</h2>
@@ -964,6 +992,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="./scripts/player.js"></script>
   <script src="./scripts/slider.js"></script>
   <script>
     

@@ -212,10 +212,16 @@
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 7" id="green_triangle">
     <path d="M4.5 0L8.39711 6.75L0.602886 6.75L4.5 0Z" fill="currentColor"></path>
   </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 17" id="player_start">
+    <path d="M11.407 9.83723L2.94746 16.5769C2.1387 17.2184 0.948792 16.642 0.948792 15.6101V2.13072C0.948792 1.09885 2.1387 0.522487 2.94746 1.16392L11.407 7.90363C12.0205 8.39633 12.0205 9.34454 11.407 9.83723Z" fill="white"></path>
+  </symbol>
 </svg>
 
 
 <!--
+  <svg class="icon">
+  <use xlink:href="#player_start"></use>
+</svg>
   <svg class="icon">
   <use xlink:href="#green_triangle"></use>
 </svg>
