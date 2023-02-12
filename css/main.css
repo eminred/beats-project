@@ -969,10 +969,10 @@ img {
     opacity: 1;
 }
 }}}*/
-.fixed-menu__item.active .fixed-menu__link {
+.fixed-menu__item--active .fixed-menu__link {
   border-color: #E01F3D;
 }
-.fixed-menu__item.active .fixed-menu__link:before {
+.fixed-menu__item--active .fixed-menu__link:before {
   background: #E01F3D;
   opacity: 1;
 }
@@ -988,10 +988,10 @@ img {
 .fixed-menu--white .fixed-menu__item .fixed-menu__link:before {
   background: white;
 }
-.fixed-menu--white .fixed-menu__item.active .fixed-menu__link {
+.fixed-menu--white .fixed-menu__item--active .fixed-menu__link {
   border-color: white;
 }
-.fixed-menu--white .fixed-menu__item.active .fixed-menu__link:before {
+.fixed-menu--white .fixed-menu__item--active .fixed-menu__link:before {
   background: white;
   opacity: 1;
 }

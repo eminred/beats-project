@@ -93,7 +93,7 @@ $z-fixed-menu: 100;
 }}}*/
 //}
 
-.fixed-menu__item.active{
+.fixed-menu__item--active{
   .fixed-menu__link{
     border-color: #E01F3D;
     &:before{
@@ -119,7 +119,7 @@ $z-fixed-menu: 100;
     }}
 
 
-  &.active{
+  &--active{
   .fixed-menu__link{
     border-color: white;
     &:before{
