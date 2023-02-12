@@ -33,8 +33,17 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transfrom;
 }
 
 .container {
@@ -882,9 +891,12 @@ img {
 
 .fixed-menu {
   position: fixed;
-  top: 20%;
-  right: 3%;
+  top: 15%;
+  right: 2%;
   z-index: 100;
+}
+.fixed-menu--white {
+  color: #fff;
 }
 
 .fixed-menu__item {
@@ -897,6 +909,13 @@ img {
   background: #E01F3D;
   opacity: 1;
 }
+.fixed-menu__item:hover .fixed-menu__link--white {
+  border-color: white;
+}
+.fixed-menu__item:hover .fixed-menu__link--white:before {
+  background: white;
+  opacity: 1;
+}
 
 .fixed-menu__link {
   width: 1rem;
@@ -905,6 +924,12 @@ img {
   border: 0.0625rem solid transparent;
   display: block;
   position: relative;
+  /*&.active{
+  border-color: #E01F3D;
+  &:before{
+    background: #E01F3D;
+    opacity: 1;
+  }}*/
 }
 .fixed-menu__link:before {
   content: "";
@@ -919,6 +944,34 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.fixed-menu__link--white {
+  /*&.active{
+      border-color: white;
+      &:before{
+        background: white;
+        opacity: 1;
+    }
+  }*/
+}
+.fixed-menu__link--white:before {
+  background: white;
+}
+
+.fixed-menu__item.active .fixed-menu__link {
+  border-color: #E01F3D;
+}
+.fixed-menu__item.active .fixed-menu__link:before {
+  background: #E01F3D;
+  opacity: 1;
+}
+.fixed-menu__item.active .fixed-menu__link--white {
+  border-color: white;
+}
+.fixed-menu__item.active .fixed-menu__link--white:before {
+  background: white;
+  opacity: 1;
 }
 
 .hamburger {
@@ -966,7 +1019,6 @@ img {
 }
 
 .footer {
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1122,6 +1174,7 @@ img {
   -webkit-box-shadow: none;
           box-shadow: none;
   background: #F8FAF9;
+  margin-bottom: 0;
 }
 
 .slider__arrow {

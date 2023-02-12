@@ -12,19 +12,19 @@
 <body id="body">
   <div class="wrapper">
     <div class="maincontent">
-      <section class="hero">
+      <section data-sidemenu-theme="grey" data-section-id="hero" class="hero">
         <div class="container hero__container">
           <header class="header">
             <img src="./img/beats_logo.png" alt="beats logo" class="logo">
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item"> <a href="#" class="menu__link">О нас</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Наушники</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Команда</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Цвета</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Отзывы</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Как мы работаем</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Контакты</a> </li>
+                <li class="menu__item"> <a href="#" data-scroll-to="benefits" class="menu__link">О нас</a> </li>
+                <li class="menu__item"> <a href="#" data-scroll-to="slider" class="menu__link">Наушники</a> </li>
+                <li class="menu__item"> <a href="#" data-scroll-to="team" class="menu__link">Команда</a> </li>
+                <li class="menu__item"> <a href="#" data-scroll-to="products" class="menu__link">Цвета</a> </li>
+                <li class="menu__item"> <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a> </li>
+                <li class="menu__item"> <a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a> </li>
+                <li class="menu__item"> <a href="#" data-scroll-to="map" class="menu__link">Контакты</a> </li>
               </ul>
             </nav>
             <a href="tel:+78009039090" class="phone-number header__phone-number">
@@ -44,7 +44,7 @@
           <div class="hero__title-section">
             <h1 class="hero__main-title">Беспроводные наушники Beats Solo 3 </h1>
             <div class="hero__title-desc">Встречайте новую версию наушников из линейки Powerbeats.</div>
-            <a href="" class="btn btn--theme--red">Заказать</a>
+            <a href="" data-scroll-to="order" class="btn btn--theme--red">Заказать</a>
           </div>
           <div class="hero__icons-section"> 
             <ul class="features">
@@ -77,7 +77,7 @@
           
         </div>
       </section>
-      <section class="section benefits-section">
+      <section data-sidemenu-theme="grey" data-section-id="benefits" class="section benefits-section">
         <div class="container">
             <h2 class="section__title benefits__title">Почему beats solo 3?</h2>
             <div class="benefits__subtitle">Процессор W1 работает невероятно эффективно и позволяет легко 
@@ -143,7 +143,7 @@
           </ul>
         </div>
       </section>
-      <section class="slider">
+      <section data-sidemenu-theme="grey"  data-section-id="slider" class="slider">
         <div class="container slider__container">
           <div class="slider__list-wrap">
             <!--<div class="slider__arrow slider__arrow--left">
@@ -540,7 +540,7 @@
           </div>
         </div>
       </section>
-      <section class="section team-section">
+      <section data-sidemenu-theme="grey" data-section-id="team" class="section team-section">
         <div class="container">
           <div class="section__title">Команда</div>
           <ul class="team team--desktop">
@@ -714,7 +714,7 @@
           </ul>
         </div>
       </section>
-      <section class="section products-menu-section">
+      <section data-sidemenu-theme="white" data-section-id="products" class="section products-menu-section">
         <h1 class="section__title products-menu-section__title">Цвета</h1>
         <ul class="products-menu">
           <li class="products-menu__item">
@@ -776,7 +776,7 @@
           </li>
         </ul>
       </section>
-      <section class="section reviews-section">
+      <section data-sidemenu-theme="grey" data-section-id="reviews" class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
@@ -854,7 +854,7 @@
           </div>
         </div>
       </section>
-      <section class="section player-section">
+      <section data-sidemenu-theme="grey" data-section-id="player" class="section player-section">
         <div class="container">
           <h2 class="section__title">Как мы работаем</h2>
           <div class="player-section__container">
@@ -891,7 +891,7 @@
           </div>
         </div>
       </section>
-      <section class="section order-section">
+      <section data-sidemenu-theme="white" data-section-id="order" class="section order-section">
         <div class="container">
           <h2 class="section__title section__title--white">Закажите доставку</h2>
           <form  class="form" autocomplete="off">
@@ -966,7 +966,7 @@
           </form>
         </div>
       </section>
-      <section class="section map-section">
+      <section data-sidemenu-theme="grey" data-section-id="map" class="section map-section">
         <div id="map" class="map"></div>
         <footer class="footer">
           <div class="container footer__container">
@@ -1018,15 +1018,15 @@
   </div>
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item active"><a href="" data-scroll-to="hero" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-scroll-to="benefits" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-scroll-to="slider" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-scroll-to="team" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-scroll-to="products" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-scroll-to="reviews" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-scroll-to="player" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="" data-scroll-to="order" class="fixed-menu__link "></a></li>
+      <li class="fixed-menu__item"><a href="" data-scroll-to="map" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
   <!--<script type="html/template" id="overlayTemplate">-->
@@ -1074,5 +1074,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="./scripts/map.js"></script>
   <script src="./scripts/menu_acco.js"></script>
+  <script src="./scripts/ops.js"></script>
+
 </body>
 </html> 

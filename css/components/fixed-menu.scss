@@ -2,10 +2,16 @@ $z-fixed-menu: 100;
 
 .fixed-menu{
   position: fixed;
-  top: 20%;
-  right: 3%;
+  top: 15%;
+  right: 2%;
   z-index: $z-fixed-menu;
+
+  &--white{
+    color: #fff;
+  }
 }
+
+
 
 .fixed-menu__item{
   margin-bottom: rem(5px);
@@ -16,6 +22,15 @@ $z-fixed-menu: 100;
       border-color: #E01F3D;
       &:before{
         background: #E01F3D;
+        opacity: 1;
+      }
+
+      
+    }
+    .fixed-menu__link--white{
+      border-color: white;
+      &:before{
+        background: white;
         opacity: 1;
       }
     }
@@ -42,6 +57,43 @@ $z-fixed-menu: 100;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
   }
+
+  /*&.active{
+  border-color: #E01F3D;
+  &:before{
+    background: #E01F3D;
+    opacity: 1;
+  }}*/
 }
+
+.fixed-menu__link--white{
+
+  &:before{
+    background: white;
+  }
+
+  /*&.active{
+    border-color: white;
+    &:before{
+      background: white;
+      opacity: 1;
+  }
+}*/}
+
+.fixed-menu__item.active{
+  .fixed-menu__link{
+    border-color: #E01F3D;
+    &:before{
+      background: #E01F3D;
+      opacity: 1;
+    }
+}
+.fixed-menu__link--white{
+
+  border-color: white;
+  &:before{
+    background: white;
+    opacity: 1;
+
+}}}
