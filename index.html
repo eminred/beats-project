@@ -714,6 +714,68 @@
           </ul>
         </div>
       </section>
+      <section class="section products-menu-section">
+        <h1 class="section__title products-menu-section__title">Цвета</h1>
+        <ul class="products-menu">
+          <li class="products-menu__item">
+            <a class="products-menu__title" href>
+              <img src="../img/slide_grey.png" alt="" class="products-menu__image">
+              <div class="products-menu__text">«Атласное серебро»
+              </div>
+            </a>
+            <div class="products-menu__content">
+              <div class="products-menu__container">
+                <button class="products-menu__close" type="button">
+                  <svg class="products-menu__close-elem">
+                    <use xlink:href="./sprite.svg#close_menu"></use>
+                  </svg>
+                </button>
+                <div class="products-menu__content-text">
+                  Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="products-menu__item">
+            <a href="" class="products-menu__title">
+              <img src="../img/slide_black.png" alt="" class="products-menu__image">
+              <div class="products-menu__text">«Чёрный матовый»
+              </div>
+            </a>
+            <div class="products-menu__content">
+              <div class="products-menu__container">
+                <button class="products-menu__close" type="button">
+                  <svg class="products-menu__close-elem">
+                    <use xlink:href="./sprite.svg#close_menu"></use>
+                  </svg>
+                </button>
+                <div class="products-menu__content-text">
+                  Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="products-menu__item">
+            <a href="" class="products-menu__title">
+              <img src="../img/slide_red.png" alt="" class="products-menu__image">
+              <div class="products-menu__text">«Красный цитрус»
+              </div>
+            </a>
+            <div class="products-menu__content">
+              <div class="products-menu__container">
+                <button class="products-menu__close" type="button">
+                  <svg class="products-menu__close-elem">
+                    <use xlink:href="./sprite.svg#close_menu"></use>
+                  </svg>
+                </button>
+                <div class="products-menu__content-text">
+                  Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
       <section class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
@@ -815,6 +877,15 @@
                   <span class="player__duration-completed">0:00</span> :
                   <span class="player__duration-estimate">0:00</span>
                 </div>
+                <button class="player__volume">
+                  <svg class="player__volume-icon">
+                    <use xlink:href="./sprite.svg#volume"></use>
+                  </svg>
+                </button>
+                <div class="player__playback-volume">
+                  <button class="player__volume-button">
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -896,6 +967,7 @@
         </div>
       </section>
       <section class="section map-section">
+        <div id="map" class="map"></div>
         <footer class="footer">
           <div class="container footer__container">
             <adress class="contacts">
@@ -995,26 +1067,12 @@
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="./scripts/player.js"></script>
   <script src="./scripts/slider.js"></script>
-  <script>
-    
-    document.getElementById('openOverlay').onclick = function(event) {
-      event.preventDefault();
-      
-      document.getElementById('overlayTemplate').classList.add('active');
-      document.getElementById('body').classList.add('menu-open');
-    }
-
-
-    
-    document.getElementById('close').onclick = function() {
-      document.getElementById('overlayTemplate').classList.remove('active');
-      document.getElementById('body').classList.remove('menu-open');
-    }
-  </script>
+  <script src="./scripts/menu.js"></script>
   <script src="./scripts/switcher.js"></script>
   <script src="./scripts/acco.js"></script>
   <script src="./scripts/modal.js"></script>
-<!--</script>
-  <script src="./scripts/menu.js"></script>-->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="./scripts/map.js"></script>
+  <script src="./scripts/menu_acco.js"></script>
 </body>
 </html> 

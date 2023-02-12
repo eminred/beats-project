@@ -948,19 +948,21 @@ img {
   border-radius: 10px;
 }
 
-.map-section {
+/*.section.map-section {
   position: relative;
-  background: url(../img/map.png) no-repeat center center/cover;
-}
-@media screen and (max-width: 768px) {
-  .map-section {
+  //background: url(../img/map.png) no-repeat center center / cover;
+
+ @include tablets {
     background-size: cover;
   }
-}
-@media screen and (max-width: 480px) {
-  .map-section {
+
+  @include phones {
     background-size: cover;
   }
+}*/
+.map {
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
@@ -1847,6 +1849,18 @@ button {
   height: 24.5rem;
   margin-left: 9.0625rem;
 }
+@media screen and (max-width: 768px) {
+  .player-section__container {
+    margin-left: 3.75rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player-section__container {
+    margin-left: 0;
+    width: 32.5rem;
+    height: 23.25rem;
+  }
+}
 
 .player {
   position: relative;
@@ -1876,6 +1890,11 @@ button {
   background: white;
   margin-top: 7px;
   margin-bottom: 7px;
+}
+@media screen and (max-width: 480px) {
+  .player.paused .player__start:after {
+    right: 30.3125rem;
+  }
 }
 .player.paused .player__start:before {
   left: 1.4375rem;
@@ -1939,6 +1958,11 @@ button {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+@media screen and (max-width: 480px) {
+  .player__playback {
+    width: 21.875rem;
+  }
+}
 
 .player__playback-button {
   background: #E01F3D;
@@ -1952,4 +1976,142 @@ button {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   left: 0;
+}
+
+.player__elem {
+  width: 41.375rem;
+  height: 22.9375rem;
+}
+
+.player__duration {
+  display: none;
+}
+
+.player__volume-icon {
+  width: 0.6875rem;
+  height: 0.9375rem;
+}
+
+.player__playback-volume {
+  height: 1rem;
+  width: 3.4375rem;
+  position: relative;
+}
+.player__playback-volume:before {
+  content: "";
+  height: 0.25rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: #333333;
+  display: block;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.player__volume-button {
+  background: #E01F3D;
+  border-radius: 3.125rem;
+  border: none;
+  width: 0.875rem;
+  height: 0.875rem;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 0;
+}
+
+.products-menu-section {
+  background: url("../img/colors_section.png") center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-menu__title {
+  position: relative;
+  width: 6.375rem;
+}
+
+.products-menu__content {
+  background: rgba(51, 53, 55, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+}
+
+.products-menu-section__title {
+  top: 9.8125rem;
+  position: absolute;
+  left: 13.6875rem;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .products-menu-section__title {
+    left: 2.8125rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .products-menu-section__title {
+    left: 1.875rem;
+  }
+}
+
+.products-menu__container {
+  padding: 2.5rem 4.5625rem 2.8125rem 1.625rem;
+}
+
+.products-menu__close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5625rem;
+  border: none;
+  background: transparent;
+}
+
+.products-menu__close-elem {
+  width: 0.5625rem;
+  height: 0.5625rem;
+}
+
+.products-menu__text {
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  bottom: 124px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  left: 30px;
+}
+
+.products-menu__image {
+  height: 100%;
+}
+
+.products-menu__content-text {
+  line-height: 24px;
 }

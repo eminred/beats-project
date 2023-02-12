@@ -1,0 +1,82 @@
+.products-menu-section{
+  background: url("../img/colors_section.png") center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.products-menu{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.products-menu__item {
+  display: flex;
+}
+
+.products-menu__title{
+  position: relative;
+  width: rem(102px);
+
+}
+
+.products-menu__content{
+  background: rgba(51, 53, 55, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width .7s;
+}
+
+.products-menu-section__title{top: rem(157px);
+  position: absolute;
+  left: rem(219px);
+  color: #FFFFFF;
+
+  @include tablets{
+    left: rem(45px);
+  }
+
+  @include phones{
+    left: rem(30px);
+  }
+}
+
+.products-menu__container{
+  padding: rem(40px) rem(73px) rem(45px) rem(26px);
+}
+
+.products-menu__close{
+  position: absolute;
+  top: rem(20px);
+  right: rem(25px);
+  border: none;
+  background: transparent;
+}
+
+.products-menu__close-elem{
+  width: rem(9px);
+  height: rem(9px);
+}
+
+.products-menu__text {
+writing-mode: tb-rl;
+   transform:rotate(180deg);
+   position: absolute;
+    bottom: 124px;
+    font-weight: 700;
+font-size: 36px;
+line-height: 43px;
+    left: 30px;
+}
+
+.products-menu__image{
+  height: 100%; //rem(746px);
+}
+
+.products-menu__content-text{
+line-height: 24px;
+}
+
