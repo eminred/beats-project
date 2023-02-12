@@ -101,7 +101,7 @@ img {
 
 .hero {
   background: #F5F5F5;
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   color: #292929;
   position: relative;
@@ -385,7 +385,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
