@@ -13,13 +13,13 @@ const performTransition = (sectionEq) => {
 
   const currentSection = sections.eq(sectionEq);
   const menuTheme = currentSection.attr("data-sidemenu-theme");
-  const mainMenu = $(".fixed-menu")
-  const sideMenu = $(".fixed-menu__link");
+  const sideMenu = $(".fixed-menu")
+  //const sideMenu = $(".fixed-menu__link");
 
   if(menuTheme === "white") {
-    sideMenu.addClass("fixed-menu__link--white");
+    sideMenu.addClass("fixed-menu--white");
   } else {
-    sideMenu.removeClass("fixed-menu__link--white");
+    sideMenu.removeClass("fixed-menu--white");
   }
 
   display.css({
@@ -27,10 +27,10 @@ const performTransition = (sectionEq) => {
   });
 
   sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
-  mainMenu.find(".fixed-menu__item").eq(sectionEq).addClass("active").siblings().removeClass("active"); 
 
   setTimeout (() => {
     inScroll = false;
+    sideMenu.find(".fixed-menu__item").eq(sectionEq).addClass("active").siblings().removeClass("active"); 
 
 
   }, 1300);
