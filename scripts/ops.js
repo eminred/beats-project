@@ -1,6 +1,7 @@
 const sections = $("section");
 const display = $(".maincontent");
 
+
 let inScroll = false;
 
 sections.first().addClass("active");
@@ -13,7 +14,10 @@ const performTransition = (sectionEq) => {
 
   const currentSection = sections.eq(sectionEq);
   const menuTheme = currentSection.attr("data-sidemenu-theme");
-  const sideMenu = $(".fixed-menu")
+  const sideMenu = $(".fixed-menu");
+  
+  
+
   //const sideMenu = $(".fixed-menu__link");
 
   if(menuTheme === "white") {
@@ -82,6 +86,9 @@ switch (e.keyCode) {
 });
 
 
+$(".wrapper").on("touchmove", e => e.preventDefault()
+); //mobile
+
 $("[data-scroll-to]").click(e => {
   e.preventDefault();
 
@@ -90,5 +97,31 @@ $("[data-scroll-to]").click(e => {
   const reqSection = $(`[data-section-id=${target}]`);
 
   performTransition(reqSection.index());
-})
+});
 
+
+
+
+const mobileDetect = new mobileDetect (window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
+
+if (isMobile) {
+
+  $("body").swipe({
+
+  swipe: function (event, direction) {
+    const scroller = viewportScroller();
+    let scrollDirection = "";
+
+    if (direction === "up") scrollDirection = "next";
+    if (direction === "down") scrollDirection = "prev";
+
+    scroller[scrollDirection]();
+
+  }
+
+
+  });
+
+}
