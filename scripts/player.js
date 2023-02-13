@@ -33,6 +33,41 @@ let eventsInit = () => {
 });
 };
 
+//громкость
+
+const playVolume = $(".player__volume");
+let isMuted = false; 
+
+$(".player__volume").click(e => {
+  e.preventDefault();
+  
+
+  if (!isMuted) {
+    player.unMute()
+    isMuted = true
+  } else {
+    player.mute()
+    isMuted = false
+  }
+});
+
+$(".player__playback-volume").click(e => {
+  const barVolume = $(e.currentTarget);
+  const clickedPositionVolume = e.originalEvent.layerX;
+  //const volumeInt = player.getVolume();
+
+  
+  const newButtonPositionPercentVolume = (clickedPositionVolume / barVolume.width()) * 100;
+  const newPlaybackPositionSecVolume =
+    (player.getVolume() / 100) * newButtonPositionPercentVolume;
+  
+  $(".player__volume-button").css({
+    left: `${newButtonPositionPercentVolume}%`
+  });
+  
+  player.setVolume (newButtonPositionPercentVolume);
+ });
+
 
  const formatTime = timeSec => {
   const roundTime = Math.round(timeSec);

@@ -1939,8 +1939,10 @@ button {
 @media screen and (max-width: 480px) {
   .player-section__container {
     margin-left: 0;
-    width: 32.5rem;
+    width: 34.375rem;
     height: 23.25rem;
+    position: relative;
+    left: -0.6875rem;
   }
 }
 
@@ -1975,7 +1977,7 @@ button {
 }
 @media screen and (max-width: 480px) {
   .player.paused .player__start:after {
-    right: 30.3125rem;
+    right: 31.875rem;
   }
 }
 .player.paused .player__start:before {
@@ -2021,6 +2023,7 @@ button {
 .player__icon {
   width: 0.6875rem;
   height: 1rem;
+  margin-top: 0.1875rem;
 }
 
 .player__playback {
@@ -2072,6 +2075,7 @@ button {
 .player__volume-icon {
   width: 0.6875rem;
   height: 0.9375rem;
+  margin-top: 0.25rem;
 }
 
 .player__playback-volume {
