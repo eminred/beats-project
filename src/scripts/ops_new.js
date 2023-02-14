@@ -1,4 +1,4 @@
-const sections = $("section");
+/*const sections = $("section");
 const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find(".fixed-menu__item");
@@ -147,4 +147,4 @@ $(window).on("wheel",(e) => {
       });
     
     }
-    
+    */

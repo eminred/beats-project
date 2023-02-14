@@ -1,4 +1,4 @@
-let player;
+/*let player;
 const playerContainer = $(".player");
 
 let eventsInit = () => {
@@ -31,4 +31,4 @@ let eventsInit = () => {
  $(".player__splash").click(e => {
   player.playVideo();
 });
-};
+};*/
