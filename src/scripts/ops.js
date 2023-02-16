@@ -120,7 +120,9 @@ $(window).on("wheel",(e) => {
 
     $("[data-scroll-to]").click(e => {
       e.preventDefault();
-    
+      
+      $(".fullscreen-menu").removeClass("active");
+      $("body").removeClass("menu-open");
       const $this = $(e.currentTarget);
       const target = $this.attr("data-scroll-to");
       const reqSection = $(`[data-section-id=${target}]`);
